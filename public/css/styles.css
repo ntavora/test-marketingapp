@@ -1,0 +1,729 @@
+body {
+  padding: 20px;
+  margin: 0;
+}
+
+.step {
+  display: none;
+}
+
+main {
+  margin-top: 52px;
+}
+
+.postcard-preview {
+  background-color: #ffffff;
+  border: 1px solid #d8dde6;
+  padding: 10px;
+  height: 330px;
+  width: 580px;
+  overflow: scroll;
+}
+
+.slds-text-body--small,
+.slds-text-body_small {
+  font-size: .70em;
+}
+
+.jss315 {
+  margin-left: -20px;
+  margin-right: 20px;
+}
+
+.jss355 {
+  flex-grow: 0;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+
+.jss314 {
+  top: 0;
+  position: sticky;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.jss543 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.jss541 {
+  height: 500px;
+  margin: auto;
+  padding: 47px 16px 65px 19px;
+  max-width: 255px!important;
+  min-width: 255px!important;
+  background-size: contain;
+  background-image: url(../images/device_wireframe2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jss515 {
+  height: 100%;
+  background-color: #F4F5F5;
+}
+
+.jss802 {
+  position: relative;
+  box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.43);
+  background-color: #FDFDFD;
+}
+
+.jss772 {
+  padding: 10px;
+  min-height: 76px;
+  background-color: #FDFDFD;
+}
+
+.jss774 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.jss152 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.jss775 {
+  overflow: hidden;
+  font-size: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss118 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.46429em;
+}
+
+.jss109 {
+  margin: 0;
+  display: block;
+}
+
+.jss772 {
+  padding: 10px;
+  min-height: 76px;
+  background-color: #FDFDFD;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jss780 {
+
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-left: 7px;
+}
+
+.jss777 {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss109 {
+  margin: 0;
+  display: block;
+}
+
+.jss781 {
+  padding-top: 0;
+}
+
+.jss801 {
+  width: 100%;
+  height: 100%;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  background-size: cover;
+  background-color: #FDFDFD;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jss784 {
+  top: -4px;
+  display: flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  text-tansform: uppercase;
+}
+
+.jss791 {
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.jss791 p {
+  color: #BEBDBE;
+  font-weight: bold;
+}
+
+.jss118 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.46429em;
+}
+
+.jss109 {
+  margin: 0;
+  display: block;
+}
+
+.jss324 {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.jss359 {
+  flex-grow: 0;
+  max-width: 66.666667%;
+  flex-basis: 66.666667%;
+}
+
+.jss72 {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+}
+
+.jss544 {
+  cursor: pointer;
+}
+
+.jss154 {
+  color: #89DA3E;
+}
+
+.jss152 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.jss543 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.jss314 {
+  top: 0;
+  position: sticky;
+}
+
+.jss1304 p {
+  color: #0F3B7A;
+  font-weight: bold;
+}
+
+.jss1368 p {
+  color: #0F3B7A;
+  font-weight: bold;
+}
+
+.jss1370 {
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.43);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.jss1367 {
+  top: 7px;
+  margin: 7px;
+  display: flex;
+  position: relative;
+  text-tansform: uppercase;
+  flex-direction: column;
+}
+
+.jss1371 {
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.jss542 {
+  height: 590px;
+  margin: auto;
+  padding: 72px 28px 90px 26px;
+  max-width: 300px;
+  background-size: contain;
+  background-image: url(/images/iphone-grey.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jss515 {
+  height: 100%;
+  background-color: #F4F5F5;
+}
+
+.jss1353 {
+  height: 100%;
+  background-color: #F4F5F5;
+}
+
+.jss1355 {
+  top: 7px;
+  position: relative;
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  min-height: 100px;
+  margin-left: 7px;
+  padding-top: 7px;
+  margin-right: 7px;
+  border-radius: 10px;
+  background-color: #FDFDFD;
+}
+
+.jss1376 {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+.jss1356 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.jss1358 {
+  width: 15px;
+  height: 15px;
+}
+
+.jss1357 {
+  overflow: hidden;
+  font-size: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss1377 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.jss1363 {
+  padding-top: 0;
+}
+
+.jss1375 {
+  width: 100%;
+  height: 100%;
+  margin-top: 7px;
+  background-size: cover;
+  background-color: #FDFDFD;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jss1378 {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.jss1359 {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss1360 {
+  font-size: 12px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.jss1367 {
+  top: 7px;
+  margin: 7px;
+  display: flex;
+  position: relative;
+  text-tansform: uppercase;
+  flex-direction: column;
+}
+
+.jss1370 {
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.43);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.jss1368 {
+  width: 100%;
+  padding: 6px;
+  font-size: 12px;
+  flex-grow: 1;
+  word-break: break-all;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.jss1368 p {
+  color: #0F3B7A;
+  font-weight: bold;
+}
+
+.jss1371 {
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.jss1416 {
+  position: relative;
+  box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.43);
+  background-color: #FDFDFD;
+}
+
+.jss1386 {
+  padding: 10px;
+  min-height: 76px;
+  background-color: #FDFDFD;
+}
+
+.jss1388 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.jss1390 {
+  width: 15px;
+  height: 15px;
+}
+
+.jss1389 {
+  overflow: hidden;
+  font-size: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss1394 {
+
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-left: 7px;
+}
+
+.jss1393 {
+  display: none;
+}
+
+.jss1391 {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss1392 {
+  font-size: 12px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.jss1395 {
+  padding-top: 0;
+}
+
+.jss1396 {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+  background-size: cover;
+  background-color: #FDFDFD;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jss1397 {
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  text-tansform: uppercase;
+}
+
+.jss1404 {
+  width: 50%;
+  padding: 4px;
+  flex-grow: 1;
+  word-break: break-all;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: left;
+}
+
+.jss1404 p {
+  color: #0F3B7A;
+  font-weight: bold;
+}
+
+.jss1426 {
+  width: 15px;
+  height: 15px;
+}
+
+.jss1425 {
+  overflow: hidden;
+  font-size: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss1445 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.jss1431 {
+  padding-top: 0;
+}
+
+.jss1444 {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+.jss1423 {
+  top: 7px;
+  position: relative;
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  min-height: 100px;
+  margin-left: 7px;
+  padding-top: 7px;
+  margin-right: 7px;
+  border-radius: 10px;
+  background-color: #FDFDFD;
+}
+
+.jss1436 p {
+  color: #0F3B7A;
+  font-weight: bold;
+}
+
+.jss1438 {
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.43);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.jss1436 {
+  width: 100%;
+  padding: 6px;
+  font-size: 12px;
+  flex-grow: 1;
+  word-break: break-all;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.jss1435 {
+  top: 7px;
+  margin: 7px;
+  display: flex;
+  position: relative;
+  text-tansform: uppercase;
+  flex-direction: column;
+}
+
+.jss1439 {
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.jss1427 {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss1428 {
+  font-size: 12px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.jss1425 {
+  overflow: hidden;
+  font-size: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss1424 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.jss152 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.jss1445 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.jss1427 {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
+
+.jss118 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.46429em;
+}
+
+.jss109 {
+  margin: 0;
+  display: block;
+}
+
+.jss1428 {
+  font-size: 12px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.jss1446 {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.jss1436 p {
+  color: #0F3B7A;
+  font-weight: bold;
+}
+
+.jss1438 {
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.43);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.jss1435 {
+  top: 7px;
+  margin: 7px;
+  display: flex;
+  position: relative;
+  text-tansform: uppercase;
+  flex-direction: column;
+}
+
+.jss1436 p {
+  color: #0F3B7A;
+  font-weight: bold;
+}
+
+.jss1438 {
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.43);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.jss1436 {
+  width: 100%;
+  padding: 6px;
+  font-size: 12px;
+  flex-grow: 1;
+  word-break: break-all;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.43);
+  text-align: center;
+  margin-bottom: 1px;
+}
+.jss1459 {
+  overflow: hidden;
+  font-size: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-overflow: ellipsis;
+}
