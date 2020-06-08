@@ -12,11 +12,11 @@ exports.login = (req, res) => {
 
       const { state } = req.query;
       if(state == "automation"){
-         res.redirect('www.devsutd.com');
+         res.redirect('http://www.devsutd.com');
       }
 
       if(state == "journey"){
-        res.redirect('www.google.com');
+        res.redirect('http://www.google.com');
      }
     }
 
