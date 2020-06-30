@@ -11,8 +11,8 @@
             "program": "${workspaceFolder}/app.js",
             "env":{
                 "authEndpoint":"https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/v2/token",
-                "baseAuth": "https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/",
-                "redirectURI":"https://test-marketingapp.herokuapp.com/login",
+                "baseAuth": "https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com",
+                "redirectURI":"https://127.0.0.1:5000/login",
                 "sfmcClientId":"gln0zfsufcpagua6ea04ipgu",
                 "sfmcClientSecret":"D9Ho0fbrP3V9ZVmNxyogqmz9",
                 "userInfo":"https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/v2/userinfo",

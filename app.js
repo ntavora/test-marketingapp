@@ -18,10 +18,14 @@ app.set('trust proxy', 1) // trust first proxy
 app.use(session({
         secret: 'keyboard cat',
         resave: false,
-        saveUninitialized: true,
-        cookie: { secure: true }
+        saveUninitialized: false
     }))
     // Configure Express
+app.set('views', `${__dirname}/public/`);
+app.engine('html', require('ejs').renderFile);
+
+app.set('view engine', 'html');
+
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.raw({ type: 'application/jwt' }));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -36,9 +40,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
     app.use(errorhandler());
 }
-app.get('/home', function(req, res) {
-    console.log(req.session);
-
+app.get('/demo', function(req, res) {
+    console.log(req.session.token);
+    console.log(security.getDecyptedObject(req.session.token));
     res.render('home/index.html');
 
 });
