@@ -21,6 +21,8 @@ exports.login = (req, res) => {
                 },
             };
             var token = security.parseTojwtEncripted(request);
+
+            console.log("decoded " + security.getDecyptedObject(token));
             console.log("decoded " + security.getDecyptedObject(token));
             res.cookie('cookiename', token, { maxAge: 900000, httpOnly: true });
             if (state == "automation") {
