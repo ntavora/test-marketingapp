@@ -48,7 +48,6 @@ exports.login = (req, res) => {
                 let view = `/Home`;
                 console.log(req.session);
                 req.session.token = encryptedToken;
-                res.setheader('stoken', encryptedToken);
                 return res.redirect(view);
             });
         }
