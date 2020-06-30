@@ -36,6 +36,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
     app.use(errorhandler());
 }
+app.get('/home', function(req, res) {
+    console.log(req.session);
+
+    res.render('/home/index.html');
+
+});
 app.get('xssEscape', security.xssEscape);
 app.get('parseTojwtEncripted', security.parseTojwtEncripted);
 app.get('getDecyptedObject', security.getDecyptedObject);
