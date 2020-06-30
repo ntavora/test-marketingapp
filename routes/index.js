@@ -1,5 +1,8 @@
 const jwtDecode = require('jwt-decode');
 const security = require('./security');
+const sfmcHelper = require('./sfmchelper');
+const sfmc = require('./sfmc');
+
 exports.login = (req, res) => {
 
     try {
@@ -8,10 +11,11 @@ exports.login = (req, res) => {
             stateParam = `&state=${req.query.state}`;
         }
         if (req.query.code === undefined) {
-            res.redirect(`https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/v2/authorize?response_type=code&client_id=5cwinm5nfzk8mz6cmu16j1fh&redirect_uri=https://test-marketingapp.herokuapp.com/login${stateParam}`);
+            const redirectUri = `${process.env.baseAuth}/v2/authorize?response_type=code&client_id=${process.env.sfmcClientId}&redirect_uri=${process.env.redirectURI}${stateParam}`;
+            res.redirect(redirectUri);
+
         } else {
 
-            var token = security.parseTojwtEncripted(request);
             const state = stateParam.split('=')[1];
             const tssd = req.query.tssd === undefined ? process.env.tssd : req.query.tssd;
             const request = {
@@ -21,6 +25,7 @@ exports.login = (req, res) => {
                 },
             };
 
+            var token = security.parseTojwtEncripted(request);
             sfmcHelper.authorize(request, (e, r) => {
                 if (e) {
                     res.status(400).end(e);
