@@ -43,7 +43,7 @@ exports.login = (req, res) => {
                 const mid = r.bussinessUnitInfo.member_id;
                 console.log(mid);
                 // eslint-disable-next-line consistent-return
-                const encryptedToken = security.parseTojwtEncripted(resp);
+                const encryptedToken = security.parseTojwtEncripted(Request2);
                 res.cookie('stoken', encryptedToken, { maxAge: 900000, httpOnly: false });
                 let view = `/Home`;
                 req.session.token = encryptedToken;
