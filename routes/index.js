@@ -25,7 +25,7 @@ exports.login = (req, res) => {
 
             console.log(token);
             const hashedPassword = bcrypt.hashSync(token, 'kamicASE');
-            console.log(hashedPassword);
+            console.log("encrypted value " + hashedPassword);
             res.cookie('cookiename', hashedPassword, { maxAge: 900000, httpOnly: true });
             if (state == "automation") {
                 res.redirect('/home');
