@@ -10,53 +10,40 @@
     style-src  'self' 'unsafe-inline' *">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link rel="stylesheet"
-        href="../vendor/bower_components/salesforce-lightning-design-system/assets/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" href="../vendor/bower_components/salesforce-lightning-design-system/assets/styles/salesforce-lightning-design-system.min.css">
 
     <script type="text/javascript" src="../vendor/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../js/login.js"></script>
 </head>
 
 <body style="background-color: #fff;">
-    <div class="visual-area-positions--left-half " closertotopclass="project-canvas-element--closer-to-top" id="login"
-        style="display:block;">
+    <div class="visual-area-positions--left-half " closertotopclass="project-canvas-element--closer-to-top" id="login" style="display:block;">
         <div class="slds-grid slds-grid_align-center ">
 
-            <div class="slds-clearfix visual-area-positions--closer-to-top visual-area-positions--left-half slds-size_medium"
-                dropzone="grid column 1">
+            <div class="slds-clearfix visual-area-positions--closer-to-top visual-area-positions--left-half slds-size_medium" dropzone="grid column 1">
                 <div class="visual-area-positions--left-half" closertotopclass="project-canvas-element--closer-to-top">
-                    <div class="slds-form slds-clearfix slds-form_stacked slds-align_absolute-center visual-area-positions--closer-to-top visual-area-positions--left-half"
-                        dropzone="formLayout">
-                        <div class="visual-area-positions--left-half"
-                            closertotopclass="project-canvas-element--closer-to-top">
-                            <img src="../images/Logo.PNG"
-                                style="width: auto; height: auto;"></div>
+                    <div class="slds-form slds-clearfix slds-form_stacked slds-align_absolute-center visual-area-positions--closer-to-top visual-area-positions--left-half" dropzone="formLayout">
+                        <div class="visual-area-positions--left-half" closertotopclass="project-canvas-element--closer-to-top">
+                            <img src="../images/Logo.PNG" style="width: auto; height: auto;"></div>
                     </div>
                 </div>
                 <div class="visual-area-positions--left-half" closertotopclass="project-canvas-element--closer-to-top">
                     <div>
                         <div class="slds-card__header slds-clearfix slds-grid">
                             <header class="slds-media slds-media_center slds-has-flexi-truncate">
-                                <div
-                                    class="slds-grid slds-grid_vertical-align-center slds-size_3-of-4 slds-medium-size_2-of-3">
+                                <div class="slds-grid slds-grid_vertical-align-center slds-size_3-of-4 slds-medium-size_2-of-3">
                                     <div class="slds-media__body">
-                                        <h2><a class="slds-card__header-link slds-truncate"
-                                                href="javascript:void(0);"><span
+                                        <h2><a class="slds-card__header-link slds-truncate" href="javascript:void(0);"><span
                                                     class="slds-text-heading_small"></span></a></h2>
                                     </div>
                                 </div>
                             </header>
 
                         </div>
-                        <div class="slds-card__body slds-clearfix slds-card__body_inner visual-area-positions--left-half"
-                            dropzone="card body">
-                            <div class="visual-area-positions--left-half"
-                                closertotopclass="project-canvas-element--closer-to-top">
-                                <div class="slds-form slds-clearfix slds-form_stacked visual-area-positions--left-half"
-                                    dropzone="formLayout">
-                                    <div class="visual-area-positions--left-half"
-                                        closertotopclass="project-canvas-element--closer-to-top"
-                                        id="username-panel">
+                        <div class="slds-card__body slds-clearfix slds-card__body_inner visual-area-positions--left-half" dropzone="card body">
+                            <div class="visual-area-positions--left-half" closertotopclass="project-canvas-element--closer-to-top">
+                                <div class="slds-form slds-clearfix slds-form_stacked visual-area-positions--left-half" dropzone="formLayout">
+                                    <div class="visual-area-positions--left-half" closertotopclass="project-canvas-element--closer-to-top" id="username-panel">
                                         <div class="slds-form-element slds-m-bottom_x-small ">
                                             <label class="slds-form-element__label"><abbr class="slds-required"
                                                     title="required">*</abbr>
@@ -64,32 +51,24 @@
                                             </label>
                                             <div class="slds-form-element__control">
                                                 <input class="slds-input" type="text" id="username" required="">
-                                                <div class="slds-form-element__help" id="username-error"
-                                                    style="display:none; color:#a71313;">Username
-                                                    field is required</div>
+                                                <div class="slds-form-element__help" id="username-error" style="display:none; color:#a71313;">Username field is required</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="visual-area-positions--left-half"
-                                    closertotopclass="project-canvas-element--closer-to-top"
-                                    id="password-panel">
-                                    <div class="slds-form-element slds-m-bottom_x-small ">
-                                        <label class="slds-form-element__label"><abbr class="slds-required"
+                                    <div class="visual-area-positions--left-half" closertotopclass="project-canvas-element--closer-to-top" id="password-panel">
+                                        <div class="slds-form-element slds-m-bottom_x-small ">
+                                            <label class="slds-form-element__label"><abbr class="slds-required"
                                                 title="required">*</abbr>
                                             <span>Password</span>
                                         </label>
-                                        <div class="slds-form-element__control">
-                                            <input class="slds-input" type="password" id="password" required="">
-                                            <div class="slds-form-element__help" id="password-error"
-                                                style="display:none; color:#a71313;">Password
-                                                field is required</div>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" type="password" id="password" required="">
+                                                <div class="slds-form-element__help" id="password-error" style="display:none; color:#a71313;">Password field is required</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                    <div class="visual-area-positions--left-half"
-                                        closertotopclass="project-canvas-element--closer-to-top">
-                                        <button id="btn-integrate"
-                                            class="slds-button slds-m-top_small slds-theme_brand   slds-button_brand">
+                                    <div class="visual-area-positions--left-half" closertotopclass="project-canvas-element--closer-to-top">
+                                        <button id="btn-integrate" class="slds-button slds-m-top_small slds-theme_brand   slds-button_brand">
                                             <span>Login</span>
                                         </button>
                                     </div>
@@ -102,5 +81,24 @@
         </div>
     </div>
 </body>
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    console.log(getCookie("cookiename"));
+</script>
 
 </html>
