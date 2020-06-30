@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Local",
+            "program": "${workspaceFolder}/app.js",
+            "env":{
+                "authEndpoint":"vhttps://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/v2/token",
+                "baseAuth": "https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/",
+                "redirectURI":"https://appsflyers-onelink-dev.herokuapp.com/login",
+                "sfmcClientId":"gln0zfsufcpagua6ea04ipgu",
+                "sfmcClientSecret":"D9Ho0fbrP3V9ZVmNxyogqmz9",
+                "userInfo":"https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/v2/userinfo",
+                "Folder":"AppsFlyers_Dev",
+                "PORT":"5000",
+                "key":"^/WU?()D6TeF.*$[,2H5Le$9nYVf-",
+                "restEndpoint":"https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.rest.marketingcloudapis.com/"
+            }
+        }
+    ]
+}
