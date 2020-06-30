@@ -39,7 +39,7 @@ if ('development' == app.get('env')) {
 app.get('/home', function(req, res) {
     console.log(req.session);
 
-    res.render('/home/index.html');
+    res.render('home/index.html');
 
 });
 app.get('xssEscape', security.xssEscape);
