@@ -25,7 +25,6 @@ exports.login = (req, res) => {
                 },
             };
 
-            var token = security.parseTojwtEncripted(request);
             sfmcHelper.authorize(request, (e, r) => {
                 if (e) {
                     res.status(400).end(e);
@@ -44,35 +43,12 @@ exports.login = (req, res) => {
                 const mid = r.bussinessUnitInfo.member_id;
                 console.log(mid);
                 // eslint-disable-next-line consistent-return
-                sfmcHelper.getCompletedCampaigns(Request2, (error, response) => {
-                    if (!error) {
-                        console.log(response.OverallStatus);
-                        if (response.OverallStatus !== 'OK') {
-                            sfmc.createDataExtensions(Request2)
-                                .then((resp) => {
-                                    console.log(resp);
-
-                                    const encryptedToken = security.parseTojwtEncripted(resp);
-                                    res.cookie('stoken', encryptedToken, { maxAge: 900000, httpOnly: false });
-                                    let view = `/Home`;
-                                    res.setheader('stoken', encryptedToken);
-                                    return res.redirect(view);
-                                })
-                                .catch((err) => { console.log(err); });
-                        } else {
-                            console.log(Request2);
-
-                            console.log(response);
-                            // crear las dataextensions
-                            let view = `/marketingapp/?eid=${Request2.body.eid}&rt=${response.refresh_token}&mid=${Request2.body.mid}`;
-
-
-
-                            return res.redirect(view);
-                        }
-                    }
-                });
-                console.log(r);
+                const encryptedToken = security.parseTojwtEncripted(resp);
+                res.cookie('stoken', encryptedToken, { maxAge: 900000, httpOnly: false });
+                let view = `/Home`;
+                req.session.token = encryptedToken;
+                res.setheader('stoken', encryptedToken);
+                return res.redirect(view);
             });
         }
 
