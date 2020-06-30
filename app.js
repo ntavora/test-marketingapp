@@ -11,9 +11,17 @@ const routes = require('./routes');
 const security = require('./routes/security');
 const sfmcHelper = require('./routes/sfmchelper');
 const sfmc = require('./routes/sfmc');
+var session = require('express-session')
 var app = express();
 
-// Configure Express
+app.set('trust proxy', 1) // trust first proxy
+app.use(session({
+        secret: 'keyboard cat',
+        resave: false,
+        saveUninitialized: true,
+        cookie: { secure: true }
+    }))
+    // Configure Express
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.raw({ type: 'application/jwt' }));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -58,6 +66,7 @@ app.post('/sfmcHelper/searchByEmail', sfmcHelper.searchByEmail);
 
 app.get('/login', routes.login);
 app.get('/logout', routes.logout);
+
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
