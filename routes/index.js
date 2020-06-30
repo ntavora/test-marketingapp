@@ -1,4 +1,5 @@
 const jwtDecode = require('jwt-decode');
+var bcrypt = require('bcryptjs');
 exports.login = (req, res) => {
 
     try {
@@ -11,6 +12,16 @@ exports.login = (req, res) => {
         } else {
 
             const { state } = req.query;
+            const tenantSubdomain = req.query.tssd === undefined ? process.env.tssd : req.query.tssd;
+
+            const request = {
+                body: {
+                    code: req.query.code,
+                    tssd: tenantSubdomain,
+                },
+            };
+            console.log(jwtDecode(request));
+            const hashedPassword = bcrypt.hashSync(req.body.password, 10);
 
             res.cookie('cookiename', 'cookievalue', { maxAge: 900000, httpOnly: true });
             if (state == "automation") {

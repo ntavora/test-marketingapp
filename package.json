@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/devsutd/journey-builder-activity-template#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "bower": "^1.8.4",
     "errorhandler": "^1.5.0",
@@ -37,7 +38,8 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-javascript-obfuscator": "^1.1.4",
     "gulp-json-modify": "^1.0.2",
-    "jsonwebtoken": "^8.0.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^2.2.0",
     "moment": "^2.22.0",
     "moment-timezone": "^0.5.14",
