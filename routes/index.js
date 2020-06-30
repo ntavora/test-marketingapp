@@ -1,5 +1,5 @@
 const jwtDecode = require('jwt-decode');
-const security = require('./routes/security');
+const security = require('./security');
 exports.login = (req, res) => {
 
     try {
