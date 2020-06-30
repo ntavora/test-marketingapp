@@ -24,32 +24,32 @@ exports.login = (req, res) => {
                     tssd,
                 },
             };
+            /*
+                        sfmcHelper.authorize(request, (e, r) => {
+                            if (e) {
+                                res.status(400).end(e);
+                                return;
+                            }
+                            console.log(r);
+                            const Request2 = {
+                                body: {
+                                    refresh_token: r.refreshToken,
+                                    eid: r.bussinessUnitInfo.enterprise_id,
+                                    mid: r.bussinessUnitInfo.member_id,
+                                },
 
-            sfmcHelper.authorize(request, (e, r) => {
-                if (e) {
-                    res.status(400).end(e);
-                    return;
-                }
-                console.log(r);
-                const Request2 = {
-                    body: {
-                        refresh_token: r.refreshToken,
-                        eid: r.bussinessUnitInfo.enterprise_id,
-                        mid: r.bussinessUnitInfo.member_id,
-                    },
+                            };
 
-                };
-
-                const mid = r.bussinessUnitInfo.member_id;
-                console.log(mid);
-                // eslint-disable-next-line consistent-return
-                const encryptedToken = security.parseTojwtEncripted(Request2);
-                res.cookie('stoken', encryptedToken, { maxAge: 900000, httpOnly: false });
-                let view = `/Home`;
-                req.session.token = encryptedToken;
-                res.setheader('stoken', encryptedToken);
-                return res.redirect(view);
-            });
+                            const mid = r.bussinessUnitInfo.member_id;
+                            console.log(mid);
+                            // eslint-disable-next-line consistent-return
+                            const encryptedToken = security.parseTojwtEncripted(Request2);
+                            res.cookie('stoken', encryptedToken, { maxAge: 900000, httpOnly: false });
+                            let view = `/Home`;
+                            req.session.token = encryptedToken;
+                            res.setheader('stoken', encryptedToken);
+                            return res.redirect(view);
+                        }); */
         }
 
 

@@ -10,7 +10,7 @@
             "name": "Local",
             "program": "${workspaceFolder}/app.js",
             "env":{
-                "authEndpoint":"vhttps://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/v2/token",
+                "authEndpoint":"https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/v2/token",
                 "baseAuth": "https://mc2h-lnx9y6g8mb6fw8vdx6d5cn8.auth.marketingcloudapis.com/",
                 "redirectURI":"https://appsflyers-onelink-dev.herokuapp.com/login",
                 "sfmcClientId":"gln0zfsufcpagua6ea04ipgu",
