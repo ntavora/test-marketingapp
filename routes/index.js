@@ -25,7 +25,9 @@ exports.login = (req, res) => {
             var token = jwt.sign(JSON.stringify(request), sign);
             console.log("decoded " + jwt.decode(token, sign));
             console.log(token);
-            const hashedPassword = bcrypt.hashSync(token, 10);
+
+            var salt = bcrypt.genSaltSync(10);
+            const hashedPassword = bcrypt.hashSync(token, salt);
             console.log("encrypted value " + hashedPassword);
             res.cookie('cookiename', hashedPassword, { maxAge: 900000, httpOnly: true });
             if (state == "automation") {
