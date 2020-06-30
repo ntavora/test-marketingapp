@@ -50,6 +50,7 @@
     "request-promise": "^4.2.2",
     "request-promise-native": "^1.0.5",
     "require": "^2.4.20",
+    "soap": "^0.31.0",
     "twilio": "^3.17.1"
   }
 }
