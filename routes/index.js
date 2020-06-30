@@ -44,8 +44,7 @@ exports.login = (req, res) => {
                 console.log(mid);
                 // eslint-disable-next-line consistent-return
                 const encryptedToken = security.parseTojwtEncripted(Request2);
-                res.cookie('stoken', encryptedToken, { maxAge: 900000, httpOnly: false });
-                let view = `/Home`;
+                let view = `/home`;
                 console.log(req.session);
                 req.session.token = encryptedToken;
                 return res.redirect(view);
@@ -62,5 +61,5 @@ exports.login = (req, res) => {
 };
 
 exports.logout = (req) => {
-    req.session.token = '';
+    req.session.destroy();
 };
